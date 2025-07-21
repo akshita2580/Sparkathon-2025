@@ -21,12 +21,6 @@ mongoDBconnection();
 
 //GridFS Setup
 
-
-// 🔥 Import your images route
-const imageRoutes = require('./routes/images');
-// 🔌 Use your route under /api
-app.use('/api', imageRoutes);  // Now /api/returns is active
-
 // ✅ Use your returns route (routes/returns.js)
 const returnsRoute = require('./routes/returns');
 app.use('/api', returnsRoute); // Handles POST /api/returns
